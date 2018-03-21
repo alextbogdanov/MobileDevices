@@ -1,0 +1,498 @@
+body {
+    margin: 0;
+}
+
+/* HEADER CSS */
+
+#header {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    min-height: 550px;
+    background-image: url('../Images/History-Images/header-image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#header-wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(99, 156, 191, 0.6);
+}
+
+#header-scroll-down-holder {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: 15px;
+    left: 50%;
+    margin-left: -25px;
+}
+
+#title {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    font-size: 55px;
+    padding-top: 20px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+#description {
+    font-family: sans-serif;
+    color: white;
+    letter-spacing: 2.5px;
+    font-weight: lighter;
+    text-align: center;
+    max-width: 600px;
+    margin: 5px auto 0;
+}
+
+#header-scroll-down {
+    cursor: pointer;
+    text-align: center;
+    font-size: 50px;
+    bottom: 0;
+    display: block;
+    color: white;
+    animation: bounce 1s infinite;
+    -webkit-animation: bounce 1s infinite;
+    -moz-animation: bounce 1s infinite;
+    -o-animation: bounce 1s infinite;
+    text-decoration: none;
+}
+
+@-webkit-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);transform: translateY(0);}
+    40%                     {-webkit-transform: translateY(-30px);transform: translateY(-30px);}
+    60%                     {-webkit-transform: translateY(-15px);transform: translateY(-15px);}
+}
+
+@-moz-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);transform: translateY(0);}
+    40%                     {-moz-transform: translateY(-30px);transform: translateY(-30px);}
+    60%                     {-moz-transform: translateY(-15px);transform: translateY(-15px);}
+}
+
+@-o-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);transform: translateY(0);}
+    40%                     {-o-transform: translateY(-30px);transform: translateY(-30px);}
+    60%                     {-o-transform: translateY(-15px);transform: translateY(-15px);}
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {-ms-transform: translateY(0);transform: translateY(0);}
+    40%                     {-ms-transform: translateY(-30px);transform: translateY(-30px);}
+    60%                     {-ms-transform: translateY(-15px);transform: translateY(-15px);}
+}
+
+@media all and (max-width: 610px) {
+    #header {
+        height: 60vh;
+        min-height: 100px;
+    }
+}
+
+/* STAGES CSS */
+
+#stages-title {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #333;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    letter-spacing: 2.5px;
+}
+
+#stages-wrapper {
+    width: 100%;
+    height: auto;
+    background-color: rgba(99, 156, 191, 0.3);
+    box-shadow: inset 0px 0px 36px -10px rgba(0,0,0,0.75);
+    -webkit-box-shadow: inset 0px 0px 36px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 0px 36px -10px rgba(0,0,0,0.75);
+    overflow: hidden;
+}
+
+#slide-content {
+    position: relative;
+    width: 700px;
+    height: 400px;
+    margin: 50px auto 30px;
+    background-color: white;
+    box-shadow: 0px 0px 29px -4px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 29px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 29px -4px rgba(0,0,0,0.75);
+}
+
+#slide-content ul {
+    list-style-type: none;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+    overflow: hidden;
+    background-color: white;
+}
+
+.current-slide {
+    display: block;
+}
+
+.slide img {
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    top: -20%;
+}
+
+.slide h3 {
+    margin-top: 0;
+    position: relative;
+    top: 50%;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    font-wieght: 600;
+    text-align: center;
+    font-size: 26px;
+}
+
+.slide p {
+    position: relative;
+    top: 50%;
+    margin: -20px 10px;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+#slide-navigation {
+    position: relative;
+    width: 153px;
+    height: 20px;
+    margin: 0 auto 30px;
+}
+
+.slide-prev {
+    color: black;
+    font-size: 20px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.slide-next {
+    color: black;
+    font-size: 20px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+
+.slide-dot {
+    position: relative;
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    background-color: black;
+    display: inline-block;
+    margin: 0 3px;
+}
+
+.current-dot {
+    background-color: white;
+}
+
+@media all and (max-width: 710px) {
+    #slide-content {
+        width: calc(100% - 30px);
+        width: -webkit-calc(100% - 30px);
+        width: -moz-calc(100% - 30px);
+        height: 450px;
+        margin: 50px 15px 30px;
+    }
+}
+
+@media all and (max-width: 590px) {
+    #slide-content {
+        height: 550px;
+    }
+}
+
+@media all and (max-width: 530px) {
+    #stages-title {
+        font-size: 30px;
+    }
+}
+
+@media all and (max-width: 490px) {
+    #slide-content {
+        height: 500px;
+    }
+
+    .slide img {
+        width: 100%;
+        height: 50%;
+        top: -20%;
+    }
+
+    .slide h3 {
+        top: 30%;
+    }
+
+    .slide p {
+        top: 30%;
+    }
+}
+
+@media all and (max-width: 370px) {
+    #slide-content {
+        height: 600px;
+    }
+}
+
+/* COMPARISON CSS */
+
+#comparison-wrapper {
+    position: relative;
+    margin: 50px auto;
+    width: 850px;
+    height: 500px;
+}
+
+#comparison-left {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+#comparison-right {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    border-left: 1px solid black;
+}
+
+.comparison-title {
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+    font-size: 35px;
+    letter-spacing: 2.5px;
+}
+
+.comparison-description {
+    position: relative;
+    font-family: sans-serif;
+    font-weight: lighter;
+    line-height: 1.5;
+}
+
+.compare-left {
+    text-align: left;
+    margin-right: 15px;
+}
+
+.compare-right {
+    text-align: left;
+    margin-left: 15px;
+}
+
+@media all and (max-width: 890px) {
+    #comparison-wrapper {
+        position: relative;
+        margin: 50px auto;
+        width: auto;
+        height: auto;
+    }
+
+    #comparison-left {
+        position: relative;
+        width: 95%;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    #comparison-right {
+        position: relative;
+        width: 95%;
+        height: 100%;
+        margin: 0 auto;
+        border-left: 0;;
+    }
+
+    .compare-left {
+        text-align: left;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .compare-right {
+        text-align: left;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+@media all and (max-width: 530px) {
+    .comparison-title {
+        font-size: 25px;
+    }
+
+    .comparison-description {
+        font-size: 15px;
+    }
+}
+
+/* SMARTPHONE CSS */
+
+#smartphone-title {
+    position: relative;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    color: #333;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    letter-spacing: 2.5px;
+}
+
+#smartphone-wrapper {
+    width: 100%;
+    height: auto;
+    background-color: rgba(99, 156, 191, 0.3);
+    box-shadow: inset 0px 0px 36px -10px rgba(0,0,0,0.75);
+    -webkit-box-shadow: inset 0px 0px 36px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 0px 36px -10px rgba(0,0,0,0.75);
+    overflow: hidden;
+}
+
+#smartphone-slide-content {
+    position: relative;
+    width: 700px;
+    height: 400px;
+    margin: 50px auto 30px;
+    background-color: white;
+    box-shadow: 0px 0px 29px -4px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 29px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 29px -4px rgba(0,0,0,0.75);
+}
+
+#smartphone-slide-navigation {
+    position: relative;
+    width: 85px;
+    height: 20px;
+    margin: 0 auto 30px;
+}
+
+.slide-smartphone {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+    overflow: hidden;
+    background-color: white;
+}
+.current-slide-smartphone {
+    display: block;
+}
+
+.slide-smartphone img {
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    left: -20%;
+}
+
+.smartphone-right {
+    position: absolute;
+    width: 50%;
+    height: 0;
+    top: 0;
+    right: 0;
+    text-align: center;
+}
+
+.slide-smartphone h3{
+    margin-top: 10px;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    font-wieght: 600;
+    font-size: 26px;
+    display: inline-block;
+}
+
+.slide-smartphone p {
+    position: relative;
+    top: 50%;
+    margin: -10px 10px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    text-align: left;
+}
+
+.slide-dot-smartphone {
+    position: relative;
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+    background-color: black;
+    display: inline-block;
+    margin: 0 3px;
+}
+
+.current-dot-smartphone {
+    background-color: white;
+}
+
+@media all and (max-width: 720px) {
+    #smartphone-slide-content {
+        width: calc(100% - 30px);
+        width: -webkit-calc(100% - 30px);
+        width: -moz-calc(100% - 30px);
+        height: 400px;
+        margin: 50px 15px 30px;
+    }
+
+    .slide-smartphone img {
+        display: none;
+    }
+
+    .smartphone-right {
+        position: relative;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media all and (max-width: 530px) {
+    #smartphone-title {
+        font-size: 30px;
+    }
+}
+
+@media all and (max-width: 380px) {
+    #smartphone-slide-content {
+        height: 450px;
+    }
+}

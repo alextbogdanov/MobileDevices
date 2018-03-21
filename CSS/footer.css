@@ -1,0 +1,71 @@
+/* FOOTER CSS */
+
+#footer {
+    position: relative;
+    width: 100%;
+    background-color: #153440;
+    margin-bottom: -20px;
+    box-shadow: inset 0px 0px 36px -10px rgba(0,0,0,0.75);
+    -webkit-box-shadow: inset 0px 0px 36px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 0px 36px -10px rgba(0,0,0,0.75);
+}
+
+#footer-link-holder {
+    position: relative;
+    width: 620px;
+    height: 20px;
+    margin: 0 auto;
+    top: 40px;
+    text-align: center;
+}
+
+.footer-link:link {
+    color: white;
+    font-family: sans-serif;
+    font-weight: lighter;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+    letter-spacing: 2.5px;
+}
+
+.footer-link:visited {
+    color: white;
+    text-decoration: none;
+}
+
+#footer-authors {
+    position: relative;
+    width: 400px;
+    height: auto;
+    margin: 75px auto 0;
+    border-top: 1px solid white;
+    text-align: center;
+}
+
+#footer-authors p {
+    font-family: sans-serif;
+    font-weight: lighter;
+    letter-spacing: 2.5px;
+    padding-bottom: 30px;
+    color: #ccc;
+}
+
+@media all and (max-width: 650px) {
+    #footer-link-holder {
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+        top: 20px;
+    }
+
+    .footer-link:link {
+        display: block;
+        padding: 10px;
+    }
+
+    #footer-authors {
+        max-width: 300px;
+        margin: 50px auto 0;
+    }
+}

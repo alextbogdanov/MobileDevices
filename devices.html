@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Комуникационните технологии: История</title>
+        <meta charset="UTF-8" />
+        <link rel="icon" href="Images/logo.png" type="image/x-icon" />
+        <!-- IONICONS CSS -->
+        <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+        <!-- GOOGLE FONTS CSS -->
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <!-- NAV CSS -->
+        <link rel="stylesheet" type="text/css" href="CSS/nav.css" />
+        <!-- LIGHTBOX CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.18/css/lightgallery.min.css">
+        <!-- DEVICES CSS -->
+        <link rel="stylesheet" type="text/css" href="CSS/devices.css" />
+        <!-- FOOTER CSS -->
+        <link rel="stylesheet" type="text/css" href="CSS/footer.css" />
+        <meta name="description" content="Научете за етапите в развитието на телекомуникационните технологии, за тенденциите в миналото и днес за мобилните телефони и за мобилните комуникации" />
+        <meta name="keywords" content="Мобилни телефони, Мобилни устройства, История, История на мобилните телефони, Етапи в развитието на мобилните телефони, Етапи в развитието на телекомуникационните технологии, Телекомуникационни технологии, Мобилни комуникиции, Тенденции в миналото за мобилните телефони, Тенденции днес за мобилните телефони" />
+        <meta name="author" content="Alexander Bogdanov, Peter Petrov" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    </head>
+<body>
+<!-- HEADER HTML -->
+<div id="header">
+    <div id="header-wrapper">
+        <!-- NAV HTML -->
+        <div id="nav">
+            <a href="index.html" id="logo-wrapper">
+                <img src="Images/logo.png" alt="Комуникационните технологии" id="logo"/>
+            </a>
+            <ul id="nav-ul">
+                <li><a href="index.html">Начало</a></li>
+                <li><a href="history.html">История</a></li>
+                <li><a href="devices.html">Устройства</a></li>
+                <li><a href="gsm.html">Мобилни комуникации</a></li>
+            </ul>
+            <a href="Javascript:void(0)" class="ion-navicon" id="nav-reponsive-toggle"></a>
+        </div>
+        <div id="nav-reponsive-wrapper">
+            <a href="index.html" class="responsive-nav-link">Начало</a>
+            <a href="history.html" class="responsive-nav-link">История</a>
+            <a href="devices.html" class="responsive-nav-link">Устройства</a>
+            <a href="gsm.html" class="responsive-nav-link">Мобилни комуникации</a>
+        </div>
+        <h1 id="title">Устройства</h1>
+        <p id="description">Научете и се запознаете със стари мобилни устройства и техните способности.</p>
+        <div id="header-scroll-down-holder">
+            <a href="#search-wrapper" class="ion-ios-arrow-down" id="header-scroll-down"></a>
+        </div>
+    </div>
+</div>
+<!-- SEARCH DEVICE HTML -->
+<div id="search-wrapper">
+    <h1>Изберете устройство:</h1>
+    <select onchange="changeDevice(this)">
+        <option value="0">-- Изберете устройство --</option>
+        <option value="1">Nokia 9300 Communicator</option>
+        <option value="2">Sony Ericsson P900</option>
+        <option value="3">Blackberry 8700v</option>
+        <option value="4">Sony Ericsson Xperia X1</option>
+    </select>
+</div>
+<!-- DEVICE INFO HTML -->
+<div id="device-info-wrapper">
+    <div class="device-info selected-device" id="device-info-choose">
+        <h1>Изберете устройство</h1>
+        <p>Изберете устройство, за да прочетете за него.</p>
+    </div>
+    <div class="device-info" id="device-info-nokia9300">
+        <h1>Nokia 9300 Communicator</h1>
+        <p>Преди почти 12 години, Nokia първи пусна своя новаторски Communicator. Тогава, мобилни телефони са нещо ново, повечето от тях не са били тънки или лъскави и са били направени само за едно нещо – комуникация. Серията 9000 нa Nokia позволява да се свържете с интернет, изпращане и получаване на електронна поща и факсове, без нуждата от куфар, пълен с батерии, за да работи. Почти 12 години по-късно всеки телефон може да върши работата на 9300.</p>
+        <br />
+        <p>Nokia 9300 се е откроявал със следните спецификации:</p>
+        <ul>
+            <li>Екран с резолюция 640x200 пиксела, който може да се накланя на 180 градуса.</li>
+            <li>Без вграден Wi-Fi.</li>
+            <li>Няма вградена камера.</li>
+            <li>батерия - 970 мАч BP-6M.</li>
+            <li>150 MHz процесор, възможност за MMC карта памет.</li>
+            <li>Операционната система е „Symbian 7”.</li>
+            <li>Интерфейсът е оптимизиран за бърза и безпроблемна работа.</li>
+        </ul>
+        <a href="javascript:void(0)" id="nokia9300-img">Покажи снимки</a>
+        <a href="https://www.youtube.com/watch?v=7uU4oEIYF14" target="_blank">Покажи видео ревю</a>
+    </div>
+    <div class="device-info" id="device-info-sonyp900">
+        <h1>Sony Ericsson P900</h1>
+        <p>Преди повече от десетилетие Windows се появяват на пазара за мобилни устройства със
+        своята Windows mobile 5.0. Разбира се, имало е и предишни версии на операционната система, но
+        единствено тази успява да привлече потребителя с лесния си интерфейс и мултифункционалността
+        си. P900 е мултимедиен телефон с вграден цифров фотоапарат и видеокамера.
+        Той разполага с голям цветен екран с химикалка-базиран потребителски интерфейс.
+        Sony Ericsson P900 разполага с много функции, имейл мениджър, синхронизаращ се с Microsoft Outlook и Lotus Notes, разчитайки и прикачени файлове, включително Microsoft Word, Excel и PowerPoint. Неговата гама от функции, също така включва мелодии, Java игри, мултимедийни възможности и камера.</p>
+        <br />
+        <p>Характеристиките му включват:</p>
+        <ul>
+            <li>Тегло: 150 грама</li>
+            <li>Цветен дисплей (65,536 цвята; 208 х 320 пиксела)</li>
+            <li>WAP 1.2.1 (GPRS), вграден уеб браузър</li>
+            <li>Висока скорост на данни (HSCSD - до 28.8 Kbps)</li>
+            <li>E-поща (съвместим с MS Outlook и Lotus Notes)</li>
+            <li>Вградена цифрова камера (640 х 480 резолюция)</li>
+            <li>Интегрирана камера</li>
+            <li>Изпращане на снимки, звук и видео, като текстови съобщения</li>
+            <li>MP3 аудио и видео (MPEG4) плейър</li>
+            <li>Pen-базиран потребителски интерфейс и разпознаване на ръкописен текст</li>
+            <li>Операционна система Symbian</li>
+            <li>16 МВ вградена памет (32 МВ външна флаш памет)</li>
+            <li>Bluetooth, USB свързаност</li>
+            <li>готовност на батерията: 480 часа</li>
+            <li>разговори на батерията: 16 часа</li>
+        </ul>
+        <a href="javascript:void(0)" id="sonyp900-img">Покажи снимки</a>
+        <a href="https://www.youtube.com/watch?v=zS5AHiEeIis" target="_blank">Покажи видео ревю</a>
+    </div>
+    <div class="device-info" id="device-info-blackberry8700v">
+        <h1>Blackberry 8700v</h1>
+        <p>Blackberry 8700v е един от първите телефони, наподобяващи нормален телефон, но разполагайки с пълна QWERTY клавиатура. Компанията Blackberry е една от първите на пазара, която се опитва да разчупи дизайна на стандартния телефон, добавяйки нови екстри. С иновативния си дизайн Blackberry бързо успяват да станат една от водещите марки на пазара от 2005 до 2009.</p>
+        <br />
+        <p>Моделът 8700v разполага със следните характеристики:</p>
+        <ul>
+            <li>320x240 пикселов TFT дисплей</li>
+            <li>Едноядрен 312MHz процесор Intel PXA901</li>
+            <li>8 MB RAM</li>
+            <li>64 BM ROM</li>
+            <li>Bluetooth 2.0</li>
+            <li>Готовност на батерията: 16 дни</li>
+            <li>Живот на батерията по време на разговори: 4 часа</li>
+            <li>GSM- 850, 900, 1800, 1900 MHz</li>
+            <li>Синхронизиране с компютър</li>
+            <li>Пълна QWERTY клавиатура</li>
+            <li>Зареждане чрез miniUSB</li>
+            <li>Не разполага с камера</li>
+        </ul>
+        <a href="javascript:void(0)" id="blackberry8700v-img">Покажи снимки</a>
+        <a href="https://www.youtube.com/watch?v=3R95KIwHPVI" target="_blank">Покажи видео ревю</a>
+    </div>
+    <div class="device-info" id="device-info-sonyx1">
+        <h1>Sony Ericsson Xperia X1</h1>
+        <p>Xperia X1 е един от знаменитите модели на Sony Ericsson. Те го създават през 2008, опитвайки се да създат нов вид концепция за мобилен телефон - да бъде с джобни размери, но и да изпълнява функцийте на компютър.</p>
+        <br />
+        <p>Телефонът разполага със следните спецификации:</p>
+        <ul>
+            <li>3.0 инчов TFT дисплей (800x480 пиксела)</li>
+            <li>Flip-style QWERTY клавиатура</li>
+            <li>Mini-SIM</li>
+            <li>Сензорен тракпад</li>
+            <li>528 MHz ARM 11 процесор</li>
+            <li>Операционната система е Microsoft Windows Mobile 6.1 Professional</li>
+            <li>Слот за MicroSD</li>
+            <li>256 MB RAM</li>
+            <li>512 MB ROM</li>
+            <li>3.15MP Камера, записваща видео в 480p</li>
+            <li>Wi-Fi 802.11b/g</li>
+            <li>Bluetooth v2.0, A2DP</li>
+            <li>GPS</li>
+            <li>MiniUSB v2.0</li>
+            <li>1500 mAh батерия</li>
+            <li>В режим на готовност: до 640ч. (3G)/ до 833ч. (2G)</li>
+            <li>Издръжливост на батерията по време на разговори: до 10ч. (2G)/ до 6ч. (3G)</li>
+        </ul>
+        <a href="javascript:void(0)" id="sonyx1-img">Покажи снимки</a>
+        <a href="javascript:void(0)">Покажи видео ревю</a>
+    </div>
+</div>
+<!-- FOOTER HTML -->
+<div id="footer">
+    <div id="footer-link-holder">
+        <a href="index.html" class="footer-link">Начало</a>
+        <a href="history.html" class="footer-link">История</a>
+        <a href="devices.html" class="footer-link">Устройства</a>
+        <a href="gsm.html" class="footer-link">Мобилни комуникации</a>
+    </div>
+    <div id="footer-authors">
+        <p>Александър Богданов и Петър Петров</p>
+    </div>
+</div>
+
+<!-- JAVASCRIPT SOURCES -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.18/js/lightgallery.min.js">
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.18/js/lg-fullscreen.min.js"></script>
+
+<script src="Javascript/effects.js">
+</script>
+<script src="Javascript/devices.js">
+</script>
+</body>
+</html>
